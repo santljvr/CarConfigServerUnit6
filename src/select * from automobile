@@ -1,0 +1,11 @@
+select * from automobile
+select * from optionset
+select * from options
+INSERT INTO automobile() VALUES (NULL,'GM','COBALT',2000)
+INSERT INTO optionset() VALUES (NULL,'colors', (select auto_id from automobile where automobile.auto_id=2)
+INSERT INTO options() VALUES (NULL,'blue', '200',(select opset_id from optionset where optionset.opset_id=3)
+INSERT INTO optionset() VALUES (NULL,'breaks', (select auto_id from automobile where automobile.auto_id=1)
+INSERT INTO optionset() VALUES (NULL,'roofs', (select auto_id from automobile where automobile.auto_id=1)    	
+INSERT INTO options() VALUES (NULL,'abs', '50' (select opset_id from optionset where optionset.opset_id=4)
+INSERT INTO options() VALUES (NULL,'moon', '30' (select opset_id from optionset where optionset.opset_id=5)
+    	
